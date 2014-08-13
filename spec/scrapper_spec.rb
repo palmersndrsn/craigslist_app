@@ -1,10 +1,10 @@
 require "./scrapper"
 
-describe "scrapper" do 
+describe "scrapper" do
 
   before(:each) do
     # use @doc in your tests to avoid hitting the
-    #   craigslist url, which would be slow and 
+    #   craigslist url, which would be slow and
     #   problematic if you were blocked
     @doc = Nokogiri::HTML(open("today.html"))
     @today = "Aug 12"
